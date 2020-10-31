@@ -6,4 +6,8 @@
   tasks:
     - yum:
         name: nginx
-      when: ansible_os_family == "RedHat"
+        state: present
+      when: ansible_os_family == "RedHat
+      
+    
+ 
