@@ -17,4 +17,9 @@
   - name: Start NGiNX
     service:
       name: nginx
-      state: started  # starts the Nginx.service
+      state: started  # starts the Nginx.boot
+      
+- name: Start NGiNX
+    service:
+      name: nginx
+      state: enable  # enables the Nginx.service at boot
